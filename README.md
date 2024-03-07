@@ -49,6 +49,10 @@ The following plots were generated in Tableau Public. Orange is paid loans and b
 
 ![Days Credit Line Open](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/9d6fdf11-57f6-4495-8dce-efb2cc9044c1)
 
+### Number of Credit Inquiries in the last 6 Months
+
+![Number of Credit Inquires in Last 6 Months](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/7724fbb7-5068-4b0d-becb-ea97e310a130)
+
 ## Information on Credit Utilization
 
 ### Debt to Income Ratio
