@@ -69,5 +69,35 @@ The following plots were generated in Tableau Public. Orange is paid loans and b
 
 # Model Exploration and Evaluation
 
+The feature "does the loan meet peer loan kart's underwriting criteria" had a disproportionately high importance in XGBoost. Because it is not entirely clear at which point of the underwriting process this feature becomes available we will not use it as input for now.
 
+## Logistic Regression
+
+Regularization parameter found to be C=0.1
+
+<img width="629" alt="Screen Shot 2024-03-14 at 6 08 57 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/79c2bbdd-6d5e-4839-90fe-accef17bb9d1">
+
+<img width="771" alt="Screen Shot 2024-03-14 at 6 09 11 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/0b176732-1328-4347-9a8e-4e7d5c8b872d">
+
+## Random Forest
+
+200 decision  trees. Could have done more but for processing speed. Regularization paramater maximum tree depth set to 6.
+
+<img width="625" alt="Screen Shot 2024-03-14 at 6 15 04 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/4b40dcb0-4527-4dd4-a5d2-a309ab01df4e">
+
+<img width="759" alt="Screen Shot 2024-03-14 at 6 15 33 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/34553118-df7d-44fc-9860-fc02883dfd5e">
+
+## XG Boost
+
+50 rounds of boosting resulting in 50 trees. Learning rate is 0.1. Regularization parameters are gamma=0.1, maximum tree depth 3, alpha=0.1 and lambda=0.005
+
+<img width="620" alt="Screen Shot 2024-03-14 at 6 58 04 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/5f616d75-e106-45ae-9152-db97a8faa9e0">
+
+<img width="776" alt="Screen Shot 2024-03-14 at 7 00 39 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/7ed26f59-5270-4dce-bfbc-123d875738d5">
+
+## Neural Network
+
+Two layer deep neural network with 8 nodes in each layer. Dropout rate is 10% during training.
+
+<img width="624" alt="Screen Shot 2024-03-14 at 7 01 53 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/50a6f426-f7fb-4475-9367-0acb666f915a">
 
