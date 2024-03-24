@@ -5,11 +5,11 @@ The Peer Loan Kart dataset is loaded and I will train it on various pytorch neur
 
 The following plots were generated in Tableau Public. Orange is paid loans and blue is deliquent loans.
 
-## Loan paid back or not (Target Variable)
+## Target Variable: Loan paid back or in default
 
 ![Loan Paid (Target)](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/b39a9a72-3768-48a5-a408-962b585279a9)
 
-## Information on Applicant
+## Input Variables
 
 ### Logarithm of Annual Income Amount
 
@@ -17,7 +17,17 @@ The following plots were generated in Tableau Public. Orange is paid loans and b
 
 ### FICO Score
 
+Tableau Distribution
+
 ![Fico Score](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/6363bb3d-ed03-4fc6-b4c3-5a457b09c5a2)
+
+Python Probabilty Distribution Function
+
+<img width="647" alt="Screen Shot 2024-03-24 at 3 53 04 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/4890fe42-e327-46f6-b61f-34c5b9bd31e4">
+
+Python Weight of Evidence
+
+<img width="639" alt="Screen Shot 2024-03-24 at 3 53 48 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/15e9e655-7f3f-45b3-8712-1c267909531a">
 
 ### Delinquencies (30 Days Overdue) in Past 2 Years
 
@@ -27,11 +37,13 @@ The following plots were generated in Tableau Public. Orange is paid loans and b
 
 ![Number of Derogatory Records](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/2079b887-784d-41b5-a19c-8f56bea5fd03)
 
-## Information on Credit Line
-
 ### Does Loan Meet Peer Loan Kart's credit underwriting criteria
 
+This variable might have some target leaks since it depends on rules that decide if the loan is eligible or not.
+
 ![Meets Underwriting Criteria](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/c9c0ad89-cc6b-4a64-bf3e-5302f44dff4a)
+
+<img width="611" alt="Screen Shot 2024-03-24 at 3 56 40 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/d796f33d-9655-4355-8b59-d1eb3bae6f2a">
 
 ### Purpose of the Loan
 
@@ -39,7 +51,13 @@ The following plots were generated in Tableau Public. Orange is paid loans and b
 
 ### Interest Rate of Loan
 
+The interest rate is usually dependent on how much risk the loan represents so this might also be a target leak. We'll leave it in the model for now.
+
 ![Interest Rate](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/a7da02eb-753a-458f-aa6f-f8fd2a469962)
+
+<img width="627" alt="Screen Shot 2024-03-24 at 3 57 17 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/273468df-6315-4a68-b64f-cae96899abbb">
+
+<img width="654" alt="Screen Shot 2024-03-24 at 3 57 41 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/a7656514-c930-434d-adbe-d138fce933ec">
 
 ### Monthly Instalments Amount 
 
@@ -53,15 +71,21 @@ The following plots were generated in Tableau Public. Orange is paid loans and b
 
 ![Number of Credit Inquires in Last 6 Months](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/7724fbb7-5068-4b0d-becb-ea97e310a130)
 
-## Information on Credit Utilization
-
 ### Debt to Income Ratio
 
 ![Debt To Income Ratio](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/7707c36c-776d-4b76-8441-b021387091e6)
 
+<img width="650" alt="Screen Shot 2024-03-24 at 3 54 31 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/d0cc6e08-b29f-41c2-b784-be91f0e071a9">
+
+<img width="657" alt="Screen Shot 2024-03-24 at 3 54 50 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/2f771d98-6063-497a-b11d-74ddda1a9658">
+
 ### Percentage of Credit Utilization
 
 ![Percentage Credit Utilization](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/e5c160a4-6d2a-4622-a833-c5fad87890e9)
+
+<img width="648" alt="Screen Shot 2024-03-24 at 3 55 23 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/c70a26cd-73d5-4a62-8eac-d8be6bccf373">
+
+<img width="638" alt="Screen Shot 2024-03-24 at 3 55 39 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/794620b0-fd2b-4866-8d75-57a679de5a61">
 
 ### Revolving Balance
 
