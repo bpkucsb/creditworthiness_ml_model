@@ -103,6 +103,10 @@ Regularization parameter found to be C=0.1
 
 <img width="771" alt="Screen Shot 2024-03-14 at 6 09 11 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/0b176732-1328-4347-9a8e-4e7d5c8b872d">
 
+Score quantil bin is the left (lower) edge of the bin i.e. last bin is [x : 1.0)
+
+![Screen Shot 2024-03-24 at 6 34 44 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/659db261-5eda-4388-8563-4f51803bfde4)
+
 ## Random Forest
 
 200 decision  trees. Could have done more but for processing speed. Regularization paramater maximum tree depth set to 6.
@@ -110,6 +114,8 @@ Regularization parameter found to be C=0.1
 <img width="625" alt="Screen Shot 2024-03-14 at 6 15 04 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/4b40dcb0-4527-4dd4-a5d2-a309ab01df4e">
 
 <img width="759" alt="Screen Shot 2024-03-14 at 6 15 33 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/34553118-df7d-44fc-9860-fc02883dfd5e">
+
+![Screen Shot 2024-03-24 at 6 36 13 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/2f2fd199-6858-4dbd-b7c0-45f50e6fcbe0)
 
 ## XG Boost
 
@@ -119,9 +125,21 @@ Regularization parameter found to be C=0.1
 
 <img width="776" alt="Screen Shot 2024-03-14 at 7 00 39 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/7ed26f59-5270-4dce-bfbc-123d875738d5">
 
+![Screen Shot 2024-03-24 at 6 36 39 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/0a162fec-a074-43b4-8b1e-0c41aff6966f)
+
 ## Neural Network
 
 Two layer deep neural network with 8 nodes in each layer. Dropout rate is 10% during training.
 
 <img width="624" alt="Screen Shot 2024-03-14 at 7 01 53 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/50a6f426-f7fb-4475-9367-0acb666f915a">
+
+![Screen Shot 2024-03-24 at 6 37 03 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/6f5f11da-1509-4df5-883b-080529811f19)
+
+First  hidden layer weights
+
+![Screen Shot 2024-03-24 at 6 37 25 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/99d66566-3ba7-4287-b89d-a35c0b01e422)
+
+Second hidden layer weights
+
+![Screen Shot 2024-03-24 at 6 38 11 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/579fe97b-82a9-445f-8947-0ac8aa6fb4b1)
 
