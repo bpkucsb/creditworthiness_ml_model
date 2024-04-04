@@ -129,11 +129,11 @@ Score quantil bin is the left (lower) edge of the bin i.e. last bin is [x : 1.0)
 
 ## Neural Network
 
-Two layer deep neural network with 8 nodes in each layer. Dropout rate is 10% during training.
+Two layer deep neural network with 8 nodes in each layer. Dropout rate is 20% during training.
 
-<img width="624" alt="Screen Shot 2024-03-14 at 7 01 53 PM" src="https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/50a6f426-f7fb-4475-9367-0acb666f915a">
+![Screen Shot 2024-04-04 at 4 43 46 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/86896add-39af-478f-b11f-06e055f6ff4c)
 
-![Screen Shot 2024-03-24 at 6 37 03 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/6f5f11da-1509-4df5-883b-080529811f19)
+![Screen Shot 2024-04-04 at 4 44 21 PM](https://github.com/bpkucsb/creditworthiness_ml_model/assets/13769127/e0d76008-4909-4cb0-92d3-3009b4de5dc2)
 
 First  hidden layer weights
 
